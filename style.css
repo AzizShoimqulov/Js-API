@@ -6,6 +6,24 @@ body {
   background-color: #BA4949;
   color: #333;
 }
+#search {
+  display: flex;
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  padding: 15px;
+  margin: 0 auto 15px;
+  background-color: #C15C5C;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+#search::placeholder {
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 1.2;
+}
 
 .all {
   text-align: center;

@@ -8,7 +8,6 @@ if (savedCountries) {
     allCountries = JSON.parse(savedCountries);
     renderCountries(allCountries);
 } else {
-
     getCountries();
 }
 

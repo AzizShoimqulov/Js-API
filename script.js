@@ -46,7 +46,6 @@ function renderCountries(countries) {
     });
 }
 
-
 search.addEventListener('input', function () {
     const term = this.value.toLowerCase();
     localStorage.setItem('searchTerm', term)
@@ -56,6 +55,7 @@ search.addEventListener('input', function () {
     );
     renderCountries(filtered);
 });
+
 const savedSearchTerm = localStorage.getItem('searchTerm');
 if (savedSearchTerm) {
     search.value = savedSearchTerm;
@@ -64,7 +64,6 @@ if (savedSearchTerm) {
     );
     renderCountries(filtered);
 }
-
 regionButtons.forEach(button => {
     button.addEventListener('click', function () {
         const selectedRegion = this.getAttribute('data-region');
